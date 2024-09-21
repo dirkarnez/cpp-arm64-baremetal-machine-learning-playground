@@ -1,0 +1,37 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": null,
+        "Windows PowerShell": null,
+        // "Custom Init": {
+        //     "path": "pwsh.exe",
+        //     "args": [
+        //     //    "-noexit",
+        //     //    "-file",
+        //     //    "${env:APPDATA}\\PowerShell\\custom-init.ps1"
+        //     ]
+        // }
+
+        "Git Bash": {
+            "args": [
+                "-i"
+            ],
+            "icon": "terminal-bash",
+            "overrideName": true,
+            "path": "C:\\Users\\Administrator\\Downloads\\PortableGit\\git-bash.exe",
+            "source": "Git Bash",
+            "env": { 
+                "PATH": "${env:USERPROFILE}\\Downloads\\node-v18.18.0-win-x64\\node-v18.18.0-win-x64" 
+            }
+        },
+        "Command Prompt": {
+            "path": ["${env:windir}\\System32\\cmd.exe"],
+            "env": { 
+                "PATH": "D:\\Softwares\\PortableGit\\bin;${env:USERPROFILE}\\Downloads\\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-aarch64-none-elf\\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-aarch64-none-elf\\bin;D:\\Softwares\\cmake-3.29.3-windows-x86_64\\bin"
+            }
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "python.defaultInterpreterPath": "${env:USERPROFILE}/Downloads/python-3.10.8-amd64-portable/python.exe"
+}
+
+
