@@ -2,6 +2,7 @@
     "recommendations": [
         "ms-python.python",
         "github.vscode-github-actions",
-        "ms-vscode.cpptools"
+        "ms-vscode.cpptools",
+        "actboy168.tasks"
     ]
 }

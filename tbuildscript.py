@@ -20,7 +20,8 @@ tbuild.link_an_executable_from_object_files(
   tbuild.get_linker(),
   "link_script.ld",
   ["startup.o", "main.o"],
-  "main.elf"
+  "main.elf",
+  "-nostdlib"
 )
 
 tbuild.build()

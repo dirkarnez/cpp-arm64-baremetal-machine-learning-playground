@@ -1,3 +1,8 @@
+
+
+#define size_t unsigned int
+#define get_array_length(x) ((sizeof(array)) / (sizeof(array[0])))
+
 volatile unsigned int * const UART0DR = (unsigned int *) 0x09000000;
 
 void print_char_uart0(const char s) {
@@ -46,8 +51,6 @@ void print_int_array_uart0(int* n, size_t length) {
     print_number_uart0(n[i], 10);
   }
 }
-
-#define get_array_length(x) ((sizeof(array)) / (sizeof(array[0])))
 
 int main() {
     print_string_uart0("Hello World!\n");
