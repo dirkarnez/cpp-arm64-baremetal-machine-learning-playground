@@ -31,8 +31,6 @@ void print_number_uart0(unsigned long n, int base)
   print_string_uart0(str);
 }
 
-#include <stdio.h>
-
 void print_int_uart0(int n) {
     if (n < 0) {
       print_char_uart0('-');
