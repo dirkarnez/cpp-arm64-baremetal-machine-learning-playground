@@ -11,6 +11,7 @@ cpp-arm64-baremetal-machine-learning-playground
 - [ ] GPIO
 - [ ] QEMU semihosting
   - [circle/lib/qemu.cpp at 749fe99301846217439a40ac7bda547a986db0f7 · rsta2/circle](https://github.com/rsta2/circle/blob/749fe99301846217439a40ac7bda547a986db0f7/lib/qemu.cpp#L34)
+- [ ] update TBuild according to [`raw-build.cmd`](./raw-build.cmd)
 
 ### Notes
 - Dirty C macros
@@ -18,3 +19,4 @@ cpp-arm64-baremetal-machine-learning-playground
   - [How do I determine the size of my array in C? - Stack Overflow](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c)
 - Floating points does not work
   - try `-mcpu=cortex-a72 -mlittle-endian -marm -mfpu=neon-fp-armv8 -mfloat-abi=hard`
+  - It seems QEMU does not support hard float

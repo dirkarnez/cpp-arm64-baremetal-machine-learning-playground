@@ -108,7 +108,7 @@ void convolve_one_dimension(int* input, int input_size, int* kernel, int kernel_
 
 int main() {
     MY_STATIC_ASSERT(1, "3");
-
+    
     // struct A aa;
     print_string_uart0("Hello World!\n");
     int array[] = {1, 2, 3};
