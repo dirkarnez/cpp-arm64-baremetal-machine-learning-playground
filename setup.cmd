@@ -44,3 +44,5 @@ del arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-aarch64-none-elf.zip
 if exist %ARMGCC_EXE% (
     echo gcc %ARMGCC_EXE% found
 )
+
+cd /d "%~dp0"

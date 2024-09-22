@@ -13,6 +13,8 @@ cd /d "%TEMP%" &&^
 %SEVENZIP% x qemu-w64-portable-20240822.zip -o"%QEMU_DIR%" -y
 )
 
+cd /d "%~dp0"
+
 if exist %QEMU_EXE% (
   echo qemu %QEMU_EXE% found
   %QEMU_EXE% -M virt -cpu cortex-a72 -nographic -kernel main.elf
