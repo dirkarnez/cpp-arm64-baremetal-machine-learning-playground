@@ -17,7 +17,7 @@
             ],
             "icon": "terminal-bash",
             "overrideName": true,
-            "path": "C:\\Users\\Administrator\\Downloads\\PortableGit\\git-bash.exe",
+            "path": "${env:USERPROFILE}\\Downloads\\PortableGit\\git-bash.exe",
             "source": "Git Bash",
             "env": { 
                 "PATH": "${env:USERPROFILE}\\Downloads\\node-v18.18.0-win-x64\\node-v18.18.0-win-x64" 
@@ -26,7 +26,7 @@
         "Command Prompt": {
             "path": ["${env:windir}\\System32\\cmd.exe"],
             "env": { 
-                "PATH": "D:\\Softwares\\PortableGit\\bin;${env:USERPROFILE}\\Downloads\\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-aarch64-none-elf\\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-aarch64-none-elf\\bin;D:\\Softwares\\cmake-3.29.3-windows-x86_64\\bin"
+                "PATH": "${env:USERPROFILE}\\Downloads\\PortableGit\\bin;D:\\Softwares\\PortableGit\\bin;${env:USERPROFILE}\\Downloads\\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-aarch64-none-elf\\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-aarch64-none-elf\\bin;D:\\Softwares\\cmake-3.29.3-windows-x86_64\\bin"
             }
         }
     },
