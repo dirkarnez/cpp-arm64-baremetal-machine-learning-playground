@@ -4,7 +4,7 @@ cpp-arm64-baremetal-machine-learning-playground
 - [ ] neural networks
   - [dirkarnez/cpp-neural-network-playground](https://github.com/dirkarnez/cpp-neural-network-playground)
   - [Kofybrek/Neural-network: A very simple neural network.](https://github.com/Kofybrek/Neural-network)
-- [ ] Basic printf
+- [x] Basic printf
 - [ ] Mali GPU
 - [ ] Vivante GPU
 - [ ] Multicore
