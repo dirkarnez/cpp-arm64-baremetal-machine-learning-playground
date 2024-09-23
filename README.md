@@ -23,4 +23,5 @@ cpp-arm64-baremetal-machine-learning-playground
   - may need armhf compiler
     - https://github.com/sjdh02/trOS/blob/7c64f086a5317c060c4e1b0e9de42ef8d3c2285a/build.zig#L15
     - https://github.com/jasonblog/note/blob/master/toolchain/173.md
-    - https://blog.csdn.net/LEON1741/article/details/81537529 
+    - https://blog.csdn.net/LEON1741/article/details/81537529
+    - https://github.com/search?q=qemu-system-aarch64+float&type=code
