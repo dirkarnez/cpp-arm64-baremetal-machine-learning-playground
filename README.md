@@ -9,6 +9,8 @@ cpp-arm64-baremetal-machine-learning-playground
 - [ ] Vivante GPU
 - [ ] Multicore
 - [ ] GPIO
+    - https://github.com/beckus/stm32_p103_demos/tree/master/demos
+    - Semihosting USART communication
 - [ ] QEMU semihosting
   - [circle/lib/qemu.cpp at 749fe99301846217439a40ac7bda547a986db0f7 · rsta2/circle](https://github.com/rsta2/circle/blob/749fe99301846217439a40ac7bda547a986db0f7/lib/qemu.cpp#L34)
 - [ ] update TBuild according to [`raw-build.cmd`](./raw-build.cmd)
