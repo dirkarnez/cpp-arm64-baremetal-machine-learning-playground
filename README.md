@@ -20,3 +20,7 @@ cpp-arm64-baremetal-machine-learning-playground
 - Floating points does not work
   - try `-mcpu=cortex-a72 -mlittle-endian -marm -mfpu=neon-fp-armv8 -mfloat-abi=hard`
   - It seems QEMU does not support hard float
+  - may need armhf compiler
+    - https://github.com/sjdh02/trOS/blob/7c64f086a5317c060c4e1b0e9de42ef8d3c2285a/build.zig#L15
+    - https://github.com/jasonblog/note/blob/master/toolchain/173.md
+    - https://blog.csdn.net/LEON1741/article/details/81537529 
