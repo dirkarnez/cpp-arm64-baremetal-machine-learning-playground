@@ -56,10 +56,35 @@ void print_int_uart0(int n) {
     if (n < 0) {
       print_char_uart0('-');
       n = -n;
-      print_number_uart0(n, 10);
-    } else {
-      print_number_uart0(n, 10);
     }
+    print_number_uart0(n, 10);
+}
+
+int power(int base, int exponent) {
+    int ans = 1; // Initialize ans to 1
+    for (int i = 0; i < exponent; i++) { // Loop for the exponent times
+        ans *= base; // Multiply ans by base
+    }
+    return ans; // Return the result
+}
+
+void print_float_uart0(float n, int places) {
+    if (n < 0) {
+      print_char_uart0('-');
+      n = -n;
+    }
+
+    /*
+    12.3 + 2.4 = 14.7
+    truncated = 14
+    0.7 * 10
+
+    */
+    int truncated = (int)n;
+    print_number_uart0(truncated, 10);
+    print_char_uart0('.');
+
+    print_number_uart0((int)((n - truncated) * (power(10, places))), 10);
 }
 
 void print_int_array_uart0(int* n, size_t length, const char* separator) {
@@ -74,7 +99,20 @@ void print_int_array_uart0(int* n, size_t length, const char* separator) {
   print_char_uart0(']');
 }
 
-void fill_with_zeros(int* array, size_t length) {
+
+void print_float_array_uart0(float* n, size_t length, const char* separator, int places) {
+  print_char_uart0('[');
+  for (int i = 0; i < length; i++) {
+    if (i > 0) {
+      print_string_uart0(separator);
+    }
+
+    print_float_uart0(n[i], places);
+  }
+  print_char_uart0(']');
+}
+
+void fill_with_zeros(float* array, size_t length) {
   for (int i = 0; i < length; i++) {
     array[i] = 0;
   }
@@ -82,7 +120,7 @@ void fill_with_zeros(int* array, size_t length) {
 
 //////////////////////////////////////////////////////
 // Function to perform 1D convolution
-void convolve_one_dimension(int* input, int input_size, int* kernel, int kernel_size, int* output, int output_size) {
+void convolve_one_dimension(float* input, float input_size, float* kernel, int kernel_size, float* output, int output_size) {
     // for (int i = 0; i < output_size; i++) {
     //     output[i] = 0;
     //     for (int j = 0; j < kernel_size; j++) {
@@ -109,39 +147,52 @@ void convolve_one_dimension(int* input, int input_size, int* kernel, int kernel_
 int main() {
     _Static_assert(1, "3");
 
-    // struct A aa;
+  {
+      float a = 12.3;
+      float b = a + 2.4;
+      print_float_uart0(b, 10);
+
+      print_string_uart0("\n");
+  }
+
+
+  {
     print_string_uart0("Hello World!\n");
+  }
+
+  {
     int array[] = {1, 2, 3};
     size_t size = array_length(array);
     print_int_uart0(size);
     print_string_uart0("\n");
     print_int_array_uart0(array, size, ", ");
     print_string_uart0("\n");
+  }
 
     {
       // convolution
       print_string_uart0("convolution\n");
-      int input[] = {1, 2, 3};
-      int kernel[] = {4, 5, 6};
+      float input[] = {1.0, 2.0, 3.0, 4.0};
+      float kernel[] = {4.0, 5.0, 6.0, 7.0};
 
       const int input_size = array_length(input);
       print_string_uart0("input array: ");
-      print_int_array_uart0(input, input_size, ", ");
+      print_float_array_uart0(input, input_size, ", ", 2);
       print_string_uart0(", size: ");
       print_int_uart0(input_size);
       print_string_uart0("\n");
 
       const int kernel_size = array_length(kernel);
       print_string_uart0("kernel array: ");
-      print_int_array_uart0(kernel, kernel_size, ", ");
+      print_float_array_uart0(kernel, kernel_size, ", ", 2);
       print_string_uart0(", size: ");
       print_int_uart0(kernel_size);
       print_string_uart0("\n");
 
-      int output[array_length(input) + array_length(kernel) - 1];
+      float output[array_length(input) + array_length(kernel) - 1];
       print_string_uart0("output array: ");
       const int output_size = array_length(output);
-      print_int_array_uart0(output, output_size, ", ");
+      print_float_array_uart0(output, output_size, ", ", 2);
       print_string_uart0(", size: ");
       print_int_uart0(output_size);
       print_string_uart0("\n");
@@ -150,7 +201,8 @@ int main() {
       convolve_one_dimension(input, input_size, kernel, kernel_size, output, output_size);
 
       print_string_uart0("done 1D convolution: ");
-      print_int_array_uart0(output, output_size, ", ");
+      // 4 13 28 50 52 45 28 
+      print_float_array_uart0(output, output_size, ", ", 2);
       print_string_uart0("\n");
     }
 
