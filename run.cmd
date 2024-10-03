@@ -17,5 +17,5 @@ cd /d "%~dp0"
 
 if exist %QEMU_EXE% (
   echo qemu %QEMU_EXE% found
-  %QEMU_EXE% -M virt -cpu cortex-a72 -nographic -kernel main.elf
+  %QEMU_EXE% -M virt -cpu cortex-a72 -serial telnet:localhost:4321,server,nowait -nographic -kernel main.elf
 )

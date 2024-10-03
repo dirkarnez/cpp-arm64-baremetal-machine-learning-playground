@@ -145,7 +145,16 @@ void convolve_one_dimension(float* input, float input_size, float* kernel, int k
 
 
 int main() {
-    _Static_assert(1, "3");
+  _Static_assert(1, "3");
+
+  // {
+  //   while(1) 
+  //   {
+  //     print_string_uart0("Hello World!\r\n");
+  //   }
+  // }
+
+  // should capture user input
 
   {
       float a = 12.3;
@@ -207,4 +216,6 @@ int main() {
     }
 
    print_string_uart0("end of program!\n");
+
+   while(1);
 }

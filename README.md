@@ -5,16 +5,26 @@ cpp-arm64-baremetal-machine-learning-playground
   - [dirkarnez/cpp-neural-network-playground](https://github.com/dirkarnez/cpp-neural-network-playground)
   - [Kofybrek/Neural-network: A very simple neural network.](https://github.com/Kofybrek/Neural-network)
 - [x] Basic printf
+- [ ] **Basic read_line**
 - [ ] Mali GPU
 - [ ] Vivante GPU
 - [ ] Multicore
+- [ ] SIMD
 - [ ] GPIO
-    - https://github.com/beckus/stm32_p103_demos/tree/master/demos
-    - Semihosting USART communication
+  - https://github.com/beckus/stm32_p103_demos/tree/master/demos
+- [x] Semihosting USART communication
+  - [**QEMU serial console**](https://www.uni-koeln.de/~pbogusze/posts/QEMU_serial_console.html)
+  - [RT-Thread-qemu serial udp 无法通信RT-Thread问答社区 - RT-Thread](https://club.rt-thread.org/ask/question/ba9e73756a98ca4a.html)
 - [ ] QEMU semihosting
   - [circle/lib/qemu.cpp at 749fe99301846217439a40ac7bda547a986db0f7 · rsta2/circle](https://github.com/rsta2/circle/blob/749fe99301846217439a40ac7bda547a986db0f7/lib/qemu.cpp#L34)
 - [ ] update TBuild according to [`raw-build.cmd`](./raw-build.cmd)
 - [ ] debugging via QEMU facilities
+
+### QEMU baremetal projects
+- [dwelch67/qemu_arm_samples: bare metal ARM examples to be run with qemu-system-arm](https://github.com/dwelch67/qemu_arm_samples)
+
+### QEMU
+- [qemu重定向串口serial - zephyr~ - 博客园](https://www.cnblogs.com/lvzh/p/17999381)
 
 ### Notes
 - Dirty C macros
@@ -28,3 +38,6 @@ cpp-arm64-baremetal-machine-learning-playground
     - https://github.com/jasonblog/note/blob/master/toolchain/173.md
     - https://blog.csdn.net/LEON1741/article/details/81537529
     - https://github.com/search?q=qemu-system-aarch64+float&type=code
+- Interactivity
+  - ![](./docs/teraterm.jpg)
+  - Uses `\r\n` for newline in serial
