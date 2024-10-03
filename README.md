@@ -1,9 +1,14 @@
 cpp-arm64-baremetal-machine-learning-playground
 ===============================================
 ### TODOs
-- [ ] neural networks
+- [ ] realtime neural networks
   - [dirkarnez/cpp-neural-network-playground](https://github.com/dirkarnez/cpp-neural-network-playground)
   - [Kofybrek/Neural-network: A very simple neural network.](https://github.com/Kofybrek/Neural-network)
+- [ ] time-series analysis (a new fork?)
+  - time series databse
+    - [带你五分钟看懂时序数据库！-PingCAP | 平凯星辰](https://cn.pingcap.com/article/post/2900.html)
+    - [如何理解量化交易这样一份工作_量化交易产品经理-CSDN博客](https://blog.csdn.net/The_Time_Runner/article/details/104688850)
+  - digital signal processing
 - [x] Basic printf
 - [ ] **Basic read_line**
 - [ ] Mali GPU
