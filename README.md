@@ -15,6 +15,15 @@ cpp-arm64-baremetal-machine-learning-playground
 - [x] Semihosting USART communication
   - [**QEMU serial console**](https://www.uni-koeln.de/~pbogusze/posts/QEMU_serial_console.html)
   - [RT-Thread-qemu serial udp 无法通信RT-Thread问答社区 - RT-Thread](https://club.rt-thread.org/ask/question/ba9e73756a98ca4a.html)
+  - [qemu 添加串口设备 qemu console_mob64ca13ff9303的技术博客_51CTO博客](https://blog.51cto.com/u_16213613/10599763)
+  - [Running Bare Metal Applications on QEMU - Xilinx Wiki - Confluence](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/821854273/Running+Bare+Metal+Applications+on+QEMU)
+  - [dwelch67/qemu_arm_samples: bare metal ARM examples to be run with qemu-system-arm](https://github.com/dwelch67/qemu_arm_samples)
+  - [PrimeCell UART (PL011) Technical Reference Manual r1p4](https://developer.arm.com/documentation/ddi0183/f/programmer-s-model/register-descriptions/flag-register--uartfr)
+  - [c - UARTs & Registers - Stack Overflow](https://stackoverflow.com/questions/53714570/uarts-registers)
+  - [PrimeCell UART (PL011) Technical Reference Manual r1p5](https://developer.arm.com/documentation/ddi0183/g/)
+  - [PrimeCell UART (PL011) Technical Reference Manual r1p5](https://developer.arm.com/documentation/ddi0183/latest/)
+  - [PL011 Peripheral Controller](https://developer.arm.com/Processors/PL011)
+  - [Understanding UART | Rohde & Schwarz](https://www.rohde-schwarz.com/hk/products/test-and-measurement/essentials-test-equipment/digital-oscilloscopes/understanding-uart_254524.html)
 - [ ] QEMU semihosting
   - [circle/lib/qemu.cpp at 749fe99301846217439a40ac7bda547a986db0f7 · rsta2/circle](https://github.com/rsta2/circle/blob/749fe99301846217439a40ac7bda547a986db0f7/lib/qemu.cpp#L34)
 - [ ] update TBuild according to [`raw-build.cmd`](./raw-build.cmd)
