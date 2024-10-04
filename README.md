@@ -12,6 +12,8 @@ cpp-arm64-baremetal-machine-learning-playground
 - [x] Basic printf
 - [ ] **Basic read_line**
 - [ ] Mali GPU
+  - Arm Performance Studio 2024.4
+    - `.\malioc  -c Mali-G72 triangle.frag`
 - [ ] Vivante GPU
 - [ ] Multicore
 - [ ] SIMD
