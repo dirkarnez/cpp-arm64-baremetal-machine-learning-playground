@@ -12,6 +12,7 @@ cpp-arm64-baremetal-machine-learning-playground
 - [x] Basic printf
 - [ ] **Basic read_line**
 - [ ] Mali GPU
+  - [Arm Mali Offline Compiler User Guide](https://developer.arm.com/documentation/101863/0805/Using-Mali-Offline-Compiler/Compiling-OpenGL-ES-shaders?lang=en)
   - Arm Performance Studio 2024.4
     - `.\malioc  -c Mali-G72 triangle.frag`
 - [ ] Vivante GPU
