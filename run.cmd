@@ -15,6 +15,9 @@ cd /d "%TEMP%" &&^
 
 cd /d "%~dp0"
 
+@REM [QEMU User Documentation — QEMU documentation](https://www.qemu.org/docs/master/system/qemu-manpage.html)
+@REM -serial tcp:[host]:port[,server=on|off][,wait=on|off][,nodelay=on|off][,reconnect=seconds]
+@REM -serial telnet:host:port[,server=on|off][,wait=on|off][,nodelay=on|off]
 if exist %QEMU_EXE% (
   echo qemu %QEMU_EXE% found
   %QEMU_EXE% -M virt -cpu cortex-a72 -serial telnet:localhost:4321,server,nowait -nographic -kernel main.elf
