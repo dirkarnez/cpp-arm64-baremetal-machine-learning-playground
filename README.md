@@ -37,10 +37,11 @@ cpp-arm64-baremetal-machine-learning-playground
 - [ ] update TBuild according to [`raw-build.cmd`](./raw-build.cmd)
 - [ ] debugging via QEMU facilities
 
-### QEMU baremetal projects
+### (QEMU) baremetal projects
 - [dwelch67/qemu_arm_samples: bare metal ARM examples to be run with qemu-system-arm](https://github.com/dwelch67/qemu_arm_samples)
 - [rlangoy/ZedBoard-BareMetal-Examples: ZedBoard Bare Metal examples](https://github.com/rlangoy/ZedBoard-BareMetal-Examples)
-
+- https://github.com/allexoll/BBB-BareMetal
+  
 ### QEMU
 - [qemu重定向串口serial - zephyr~ - 博客园](https://www.cnblogs.com/lvzh/p/17999381)
 
