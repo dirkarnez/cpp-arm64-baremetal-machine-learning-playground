@@ -21,6 +21,41 @@
 
 volatile unsigned int * const UART0DR = (unsigned int *) 0x09000000;
 
+
+
+
+
+// #define _MMIO_BYTE(mem_addr) (*(volatile uint8_t *)(mem_addr))
+// #define _MMIO_WORD(mem_addr) (*(volatile uint16_t *)(mem_addr))
+// #define _MMIO_DWORD(mem_addr) (*(volatile uint32_t *)(mem_addr))
+
+
+// #define _SFR_MEM8(mem_addr) _MMIO_BYTE(mem_addr)
+// #define _SFR_MEM16(mem_addr) _MMIO_WORD(mem_addr)
+// #define _SFR_MEM32(mem_addr) _MMIO_DWORD(mem_addr)
+// #define _SFR_IO8(io_addr) _MMIO_BYTE((io_addr) + __SFR_OFFSET)
+// #define _SFR_IO16(io_addr) _MMIO_WORD((io_addr) + __SFR_OFFSET)
+
+// #define _SFR_MEM_ADDR(sfr) ((uint16_t) &(sfr))
+// #define _SFR_IO_ADDR(sfr) (_SFR_MEM_ADDR(sfr) - __SFR_OFFSET)
+// #define _SFR_IO_REG_P(sfr) (_SFR_MEM_ADDR(sfr) < 0x40 + __SFR_OFFSET)
+
+// #define _SFR_ADDR(sfr) _SFR_MEM_ADDR(sfr)
+
+// #endif /* !_SFR_ASM_COMPAT */
+
+// #define _SFR_BYTE(sfr) _MMIO_BYTE(_SFR_ADDR(sfr))
+// #define _SFR_WORD(sfr) _MMIO_WORD(_SFR_ADDR(sfr))
+// #define _SFR_DWORD(sfr) _MMIO_DWORD(_SFR_ADDR(sfr))
+
+
+
+
+
+
+
+
+
 void print_char_uart0(const char s) {
     *UART0DR = (unsigned int)(s); /* Transmit char */
 }
