@@ -41,7 +41,12 @@ cpp-arm64-baremetal-machine-learning-playground
 - [dwelch67/qemu_arm_samples: bare metal ARM examples to be run with qemu-system-arm](https://github.com/dwelch67/qemu_arm_samples)
 - [rlangoy/ZedBoard-BareMetal-Examples: ZedBoard Bare Metal examples](https://github.com/rlangoy/ZedBoard-BareMetal-Examples)
 - https://github.com/allexoll/BBB-BareMetal
-  
+
+### ARM
+- https://github.com/DualTachyon/rk3588-secure-boot
+
+### Android
+- https://github.com/rabeeh/android-imx6-kitkat
 ### QEMU
 - [qemu重定向串口serial - zephyr~ - 博客园](https://www.cnblogs.com/lvzh/p/17999381)
 
