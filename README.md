@@ -33,6 +33,7 @@ cpp-arm64-baremetal-machine-learning-playground
   - [PrimeCell UART (PL011) Technical Reference Manual r1p5](https://developer.arm.com/documentation/ddi0183/latest/)
   - [PL011 Peripheral Controller](https://developer.arm.com/Processors/PL011)
   - [Understanding UART | Rohde & Schwarz](https://www.rohde-schwarz.com/hk/products/test-and-measurement/essentials-test-equipment/digital-oscilloscopes/understanding-uart_254524.html)
+  - [dirkarnez/atmega328p-uart](https://github.com/dirkarnez/atmega328p-uart)
 - [ ] QEMU semihosting
   - [circle/lib/qemu.cpp at 749fe99301846217439a40ac7bda547a986db0f7 · rsta2/circle](https://github.com/rsta2/circle/blob/749fe99301846217439a40ac7bda547a986db0f7/lib/qemu.cpp#L34)
 - [ ] update TBuild according to [`raw-build.cmd`](./raw-build.cmd)
