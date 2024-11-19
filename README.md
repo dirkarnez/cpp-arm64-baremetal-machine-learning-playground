@@ -46,6 +46,7 @@ cpp-arm64-baremetal-machine-learning-playground
 
 ### ARM
 - https://github.com/DualTachyon/rk3588-secure-boot
+- [IncludeOS/src/platform/aarch64_vm at master · includeos/IncludeOS](https://github.com/includeos/IncludeOS/tree/master/src/platform/aarch64_vm)
 
 ### Android
 - https://github.com/rabeeh/android-imx6-kitkat
