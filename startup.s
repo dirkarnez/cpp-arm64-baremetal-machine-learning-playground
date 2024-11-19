@@ -7,6 +7,7 @@ _start:
     mov    x0, #(3 << 20)   /* Enable floating point, copied from https://forums.raspberrypi.com/viewtopic.php?t=259802 */
     orr    x0, x1, x0       /* Enable floating point, copied from https://forums.raspberrypi.com/viewtopic.php?t=259802 */
     msr    cpacr_el1, x0    /* Enable floating point, copied from https://forums.raspberrypi.com/viewtopic.php?t=259802 */
+    /* also see https://github.com/includeos/IncludeOS/blob/master/src/platform/aarch64_vm/start_aarch64.asm */
 
     bl main                 /* Branch to main() */
 
