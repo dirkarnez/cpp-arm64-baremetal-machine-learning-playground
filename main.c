@@ -1,4 +1,3 @@
-#define size_t unsigned int
 #if !defined( __STDC_VERSION__ ) || __STDC_VERSION__ < 201112L
 	#error "This compiler is too old or not supported. This program needs _Static_assert"
 #endif
@@ -52,8 +51,12 @@ volatile unsigned int * const UART0DR = (unsigned int *) 0x09000000;
 
 
 
+#define STB_SPRINTF_IMPLEMENTATION
+#include "stb_sprintf.h"
 
-
+#if !defined( size_t)
+  #define size_t unsigned int
+#endif
 
 
 void print_char_uart0(const char s) {
@@ -190,6 +193,17 @@ int main() {
   // }
 
   // should capture user input
+
+  {
+    char buffer[50];
+    for (int i = 0; i < 50; i++) {
+      buffer[i] = '!';
+    }
+    buffer[49] = '\0';
+    stbsp_sprintf(buffer, "Hello from stbsp_sprintf, 1+1 = %d", 1+1);
+    print_string_uart0(buffer);
+    print_string_uart0("\n");
+  }
 
   {
       float a = 12.3;
