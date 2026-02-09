@@ -39,6 +39,7 @@ cpp-arm64-baremetal-machine-learning-playground
   - [circle/lib/qemu.cpp at 749fe99301846217439a40ac7bda547a986db0f7 · rsta2/circle](https://github.com/rsta2/circle/blob/749fe99301846217439a40ac7bda547a986db0f7/lib/qemu.cpp#L34)
 - [ ] update TBuild according to [`raw-build.cmd`](./raw-build.cmd)
 - [ ] debugging via QEMU facilities
+- [ ] [ghaflims/cortex-a9: qemu cortex-a9 vexpress-a9 arm](https://github.com/ghaflims/cortex-a9)
 
 ### (QEMU) baremetal projects
 - [dwelch67/qemu_arm_samples: bare metal ARM examples to be run with qemu-system-arm](https://github.com/dwelch67/qemu_arm_samples)
