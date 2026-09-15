@@ -71,3 +71,6 @@ cpp-arm64-baremetal-machine-learning-playground
 - Interactivity
   - ![](./docs/teraterm.jpg)
   - Uses `\r\n` for newline in serial
+
+
+<!-- Security scan triggered at 2026-09-15 09:37:54 -->
